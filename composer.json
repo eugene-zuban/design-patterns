@@ -5,7 +5,10 @@
     },
 
     "autoload": {
-        "psr-4": { "Code\\": "code/" }
+        "psr-4": {
+            "Code\\": "code/",
+            "Composite\\": "code/Composite"
+        }
     },
 
     "authors": [
