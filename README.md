@@ -8,6 +8,7 @@ I'm still working on it and plan to add new Design Patterns when they will be re
 
 * [Composite](https://bitbucket.org/jack-zuban/design-patterns/src/d80fadb87f614363deb21f628e7e3b55106cc7e2/code/Composite/?at=master)
 * [Strategy](https://bitbucket.org/jack-zuban/design-patterns/src/d80fadb87f614363deb21f628e7e3b55106cc7e2/code/Strategy/?at=master)
+* [Singleton](https://bitbucket.org/jack-zuban/design-patterns/src/46475ae0db3f69a65fd7779e87aa8b96b3cd3e8e/code/Singleton/?at=master)
 
 
 ### How to use it? ###
