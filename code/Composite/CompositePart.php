@@ -38,8 +38,6 @@ class CompositePart extends Equipment
     {
         $index =  array_search($equipment, $this->parts);
         unset($this->parts[$index]);
-
-        echo "{$equipment->getName()} has been removed.";
     }
 
     /**

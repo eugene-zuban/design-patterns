@@ -1,9 +1,9 @@
 <?php
 
 //for run this example go to the the code/Composite directory
-//and type "php run.php" in a console
+//and type "php example.php" in a console
 
-require '../../vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 $billsPC = new \Composite\CompositePart('PC for Bill');
 $motherboard = new \Composite\CompositePart('Intel Motherboard');
