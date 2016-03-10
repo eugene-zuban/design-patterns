@@ -14,6 +14,10 @@ class Decorator implements ElementInterface
         $this->element = $element;
     }
 
+    /**
+     * Forward the rendering request to the element's object
+     * @return mixed
+     */
     public function renderElement()
     {
         return $this->element->renderElement();

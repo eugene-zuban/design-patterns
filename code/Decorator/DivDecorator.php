@@ -3,19 +3,20 @@
 namespace Decorator;
 
 /**
- * Class SpanDecorator wraps output inside <span> tag
+ * Class DivDecorator wraps output inside <div> tag
  * @package Decorator
  */
-class SpanDecorator extends Decorator
+class DivDecorator extends Decorator
 {
     /**
+     * Puts the parent's output inside the <div> tag
      * @return string
      */
     public function renderElement()
     {
-        $element = '<span>';
+        $element = '<div>';
         $element .= parent::renderElement();
-        $element .= '</span>';
+        $element .= '</div>';
 
         return $element;
     }
