@@ -9,7 +9,7 @@ I'm still working on it and plan to add new Design Patterns when they will be re
 * [Composite](https://bitbucket.org/jack-zuban/design-patterns/src/d80fadb87f614363deb21f628e7e3b55106cc7e2/code/Composite/?at=master)
 * [Strategy](https://bitbucket.org/jack-zuban/design-patterns/src/d80fadb87f614363deb21f628e7e3b55106cc7e2/code/Strategy/?at=master)
 * [Singleton](https://bitbucket.org/jack-zuban/design-patterns/src/46475ae0db3f69a65fd7779e87aa8b96b3cd3e8e/code/Singleton/?at=master)
-
+* [Decorator](https://bitbucket.org/jack-zuban/design-patterns/src/34bf0ea3b94b3039cb3d64ec0c0e3b67488f98c9/code/Decorator/?at=master)
 
 ### How to use it? ###
 
