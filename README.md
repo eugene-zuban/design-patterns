@@ -14,8 +14,8 @@ I'm still working on it and plan to add new Design Patterns when they will be re
 ### How to use it? ###
 
 * clone the repo `git clone https://github.com/jack-zuban/design-patterns.git`
-* run `composer install` (if you don't have a composer installed, here is a link how to install it https://getcomposer.org/doc/00-intro.md)
-* for running examples: Each design pattern has `example.php` file with a simple code that shows how it works. This is a CLI PHP file, for execute an example go to `code/{DesignPatternName}` directory and type `php example.php`
+* run `composer install` (if you don't have a composer installed, here is a link how to do it https://getcomposer.org/doc/00-intro.md)
+* for running examples: Each design pattern has `example.php` file with a simple code that shows how a specific pattern can be used. This is a CLI PHP file and for executing an example go to `code/{DesignPatternName}` directory and type `php example.php`
 * for doing tests: in the project's root directory type `./vendor/bin/phpunit tests`
 
 
