@@ -18,7 +18,7 @@ We can do this easily with Decorator pattern.
 
 ### Decorator pattern UML
 
-![decorator.png](https://bitbucket.org/repo/y6Bge8/images/3038540350-decorator.png)
+![decorator.png](https://github.com/jack-zuban/design-patterns/blob/master/images/decorator.png)
 
 ### Decorator example description
 
