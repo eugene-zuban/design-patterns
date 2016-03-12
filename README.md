@@ -6,15 +6,15 @@ I'm still working on it and plan to add new Design Patterns when they will be re
 
 ### Examples of Design Patterns ###
 
-* [Composite](https://bitbucket.org/jack-zuban/design-patterns/src/d80fadb87f614363deb21f628e7e3b55106cc7e2/code/Composite/?at=master)
-* [Strategy](https://bitbucket.org/jack-zuban/design-patterns/src/d80fadb87f614363deb21f628e7e3b55106cc7e2/code/Strategy/?at=master)
-* [Singleton](https://bitbucket.org/jack-zuban/design-patterns/src/46475ae0db3f69a65fd7779e87aa8b96b3cd3e8e/code/Singleton/?at=master)
-* [Decorator](https://bitbucket.org/jack-zuban/design-patterns/src/34bf0ea3b94b3039cb3d64ec0c0e3b67488f98c9/code/Decorator/?at=master)
+* [Composite](https://github.com/jack-zuban/design-patterns/tree/master/code/Composite)
+* [Strategy](https://github.com/jack-zuban/design-patterns/tree/master/code/Decorator)
+* [Singleton](https://github.com/jack-zuban/design-patterns/tree/master/code/Singleton)
+* [Decorator](https://github.com/jack-zuban/design-patterns/tree/master/code/Decorator)
 
 ### How to use it? ###
 
-* clone the repo `git clone https://bitbucket.org/jack-zuban/design-patterns.git`
-* run `composer install` (if you don't have composer installed, here is a link how to install it https://getcomposer.org/doc/00-intro.md)
+* clone the repo `git clone https://github.com/jack-zuban/design-patterns.git`
+* run `composer install` (if you don't have a composer installed, here is a link how to install it https://getcomposer.org/doc/00-intro.md)
 * for running examples: Each design pattern has `example.php` file with a simple code that shows how it works. This is a CLI PHP file, for execute an example go to `code/{DesignPatternName}` directory and type `php example.php`
 * for doing tests: in the project's root directory type `./vendor/bin/phpunit tests`
 
@@ -22,6 +22,6 @@ I'm still working on it and plan to add new Design Patterns when they will be re
 ### Directories and files Structure ###
 
 * the `code` directory includes sub-directories with Design Patterns. 
-* Each sub-directory has a name one of the Design Pattern, like `Composite`
-* Each design pattern has `example.php` file with a simple code that shows how it works
+* Each sub-directory has a name one of a Design Pattern, like `Composite`
+* Each design pattern has the `example.php` file with a simple code that shows how it works
 * `tests` directory includes PHPUnit tests
