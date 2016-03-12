@@ -1,13 +1,10 @@
 ##Singleton Design Pattern
 
-Singleton pattern allows to be sure a class has only once instance (object)
+Singleton pattern ensures a class has only once instance (object)
 
 ### Short description
 
-All clients need to access the singleton only throught the instance() method. By making singleton's constructor
-private we are sure that nobody outside the class can't create an instance of this class.
-The $instance property stores the instance of the Singleton class, and static instance() method creates class's
-object only if $instance property is null.
+All clients need to access a singleton only through `instance()` method. By making Singleton's constructor private we are sure that no one outside doesn't have an option to create an instance of this class.
 
 ### More information about the Singleton pattern
 
