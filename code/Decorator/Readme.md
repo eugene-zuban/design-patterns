@@ -11,7 +11,7 @@ changes that will add different "views/skins".
 
 Let's say that we have some HTML output system with the TextElement and ImageElement classes/instances on it. We want
 to be able rendering them with different wrappers (HTML tags like: div, span, p, etc). Also, we want to be able to
-add new wrappers easily without changing our Element classes, be able to use them in any order, and to nest with one
+add new wrappers easily without changing our Element classes, to be able to use them in any order and to nest them with one
 another (make a nested chain).
 
 We can do this easily with Decorator pattern.
@@ -20,16 +20,15 @@ We can do this easily with Decorator pattern.
 
 ![decorator.png](https://github.com/jack-zuban/design-patterns/blob/master/images/decorator.png)
 
-### Decorator example description
+### Description of the current Decorator realization
 
-* `ElementInterface` the main interface for all classes. Declares the `renderElement()` method that needs to be
-implemented in all classes.
-* `TextElement` Simply renders a given string using the `renderElement()` method.
-* `ImageElement` class for creating the image HTML element. `renderElement()` renders image with `src` and
+* `ElementInterface` the main interface for all the classes. It declares the `renderElement()` method.
+* `TextElement` Simply renders a given string using the `renderElement()` method without changit it.
+* `ImageElement` class for creating an image HTML element. `renderElement()` renders html img tag with `src` and
 `Alt text` from arguments.
-* `Decorator` an abstract class implements `ElementInterface`.
-* `SpanDecorator` and `DivDecorator` are concrete Decorator classes that add various "decorations" overriding `renderElement()`
-method and passes the request on to `element` (calling parent's `renderElement()` method.
+* `Decorator` is abstract class that implements `ElementInterface`.
+* `SpanDecorator` and `DivDecorator` are concrete Decorator classes which adds various "decorations" by overriding `renderElement()`
+and passing the request on to `element` (calling parent's `renderElement()` method).
 
 ### More information about the Decorator pattern
 
