@@ -1,8 +1,8 @@
 ### What is this repository for? ###
 
-This repo includes implementation on PHP of Design Patterns described in "Design Patterns Elements of Reusable Object-Oriented Software" book by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+This repo includes Design Patterns and their inmpelemtation in PHP. Information about patterns that are described here can be found in the "Design Patterns - Elements of Reusable Object-Oriented Software" book by GOF and in Wikipedia.
 
-I'm still working on it and plan to add new Design Patterns when they will be ready.
+I'm still working on it and plan to add new patternsperiodically.
 
 ### Examples of Design Patterns ###
 
