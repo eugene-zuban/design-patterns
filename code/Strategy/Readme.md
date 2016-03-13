@@ -9,20 +9,25 @@ Strategy pattern lets client (Composition) to use different algorithms through t
 * `MmsFormatter`, `SmsFormatter` and `EmailFormatter` are ConcreteStrategy. Implements the formatting algorithms using the Strategy interface.
 * `Message` class represents a Context (Composition). Stores a message and uses one of the ConcreteStrategy for formatting it.
 
+### UML
+
+![strategy.png](https://github.com/jack-zuban/design-patterns/blob/master/images/strategy.png)
+
 ### Short description
 
 With the Strategy design Pattern we can use the same interface (declared in the `Formatter` class) for doing different formatting message using one of the formatters: MmsFormatter, SmsFormatter or EmailFormatter.
-If we need to add a new formatter we don't need to change a client or a context class (`Message`), we just can add a new ConcreteStrategy Class implementing a new Formatter.
+If we need to add a new formatter we don't need to change a client or context class (`Message`), we just add a new ConcreteStrategy Class implementing a new Formatter.
 
 ### Plain description
 
-When we want to use a different algorithm for a specific situation we can select an algorithm by doing `if` or `switch` statement.
-By doing this we would create a more complicated code structure, and, every time when we want to add a new algorithms, we would have to change the code `if` or `switch` structures. 
+When we want to use a different algorithm for a specific situation we can select the algorithm by doing `if` or `switch` statement.
+By doing that we will create a more complicated code structure and every time when we need to add a new algorithms we have to change
+the client's code. With Strategy pattern we can separate the context from algorithms realization, and we can easily chose what algorithm
+to use in a different situation with current context. 
 
-With Strategy pattern we can separate a context from the algorithms realization parts and we can easily chose what algorithm to use in a different situation with current context.
-
-In this example we use a Message object as a context, and one of the Formatters as its message formatter. Strategy pattern allows to switch/use a different formatter algorithm without changing/modifying the `Message` class. While creating a Message object we specify
-what formatter algorithm to use with it.
+In this example we use a Message object as a context, and one of the Formatters as its message formatter. Strategy pattern
+allows to switch/use a different formatter algorithms without changing/modifying the `Message` class. While creating a Message object we specify
+what a formatter algorithm to use.
 
 ### More information about the Strategy pattern
 
