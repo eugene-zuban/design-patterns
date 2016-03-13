@@ -1,6 +1,6 @@
-### What is this repository for? ###
+## What is this repository for? ##
 
-This repo includes Design Patterns and their inmpelemtation in PHP. Information about patterns that are described here can be found in the "Design Patterns - Elements of Reusable Object-Oriented Software" book by GOF and in Wikipedia.
+This repo includes Design Patterns and their implementations in PHP. Information about patterns that are described here can be found in the book "Design Patterns - Elements of Reusable Object-Oriented Software" by GOD and in Wikipedia.
 
 I'm still working on it and plan to add new patternsperiodically.
 
