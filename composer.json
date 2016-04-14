@@ -10,7 +10,8 @@
             "Composite\\": "code/Composite",
             "Strategy\\": "code/Strategy",
             "Singleton\\": "code/Singleton",
-            "Decorator\\": "code/Decorator"
+            "Decorator\\": "code/Decorator",
+            "AbstractFactory\\": "code/AbstractFactory"
         }
     },
 
