@@ -15,7 +15,7 @@ by their factories and accessible for the client through `ProductSuv` and `Produ
 
 ### UML
 
-![abstractFactory.png](https://github.com/jack-zuban/design-patterns/master/images/abstractFactory.png)
+![abstractFactory.png](https://github.com/jack-zuban/design-patterns/blob/master/images/abstractFactory.png)
 
 ###Short description
 
