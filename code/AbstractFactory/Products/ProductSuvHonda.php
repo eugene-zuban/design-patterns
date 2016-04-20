@@ -2,20 +2,20 @@
 
 namespace AbstractFactory\Products;
 
-use AbstractFactory\ManufactureSUV;
+use AbstractFactory\ProductSuv;
 
 /**
- * Class ManufactureSUVHonda a product of/for MotorcadeHonda concrete factory
+ * Class ProductSuvHonda a product of/for HondaFactory concrete factory
  * @package AbstractFactory\Products
  */
-class ManufactureSUVHonda extends ManufactureSUV
+class ProductSuvHonda extends ProductSuv
 {
     /**
      * Returns SUV manufacturer
      *
      * @return string
      */
-    public function getSUVManufacturer()
+    public function getSuvManufacturer()
     {
         return 'Honda';
     }

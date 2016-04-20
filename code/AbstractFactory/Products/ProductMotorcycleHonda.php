@@ -2,13 +2,14 @@
 
 namespace AbstractFactory\Products;
 
-use AbstractFactory\ManufactureMotorcycle;
+use AbstractFactory\ProductMotorcycle;
 
 /**
- * Class ManufactureMotorcycleBmw a product of/for MotorcadeBmw concrete factory
+ * Class ProductMotorcycleHonda a product of/for HondaFactory concrete factory
+ *
  * @package AbstractFactory\Products
  */
-class ManufactureMotorcycleBmw extends ManufactureMotorcycle
+class ProductMotorcycleHonda extends ProductMotorcycle
 {
     /**
      * Returns Motorcycle's manufacturer
@@ -17,6 +18,6 @@ class ManufactureMotorcycleBmw extends ManufactureMotorcycle
      */
     public function getMotorcycleManufacturer()
     {
-        return 'BMW';
+        return 'Honda';
     }
 }

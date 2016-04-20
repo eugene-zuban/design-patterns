@@ -2,25 +2,25 @@
 
 require (__DIR__ . '/../../vendor/autoload.php');
 
-//lets consider that we need 2 different motorcade that have the same products type (vehicles has a same manufacturer)
+//lets consider that we have 2 different manufacturer (factories) that produce the same products (vehicles) types
 //for doing this we have to use 2 concrete factory: the first one for Bmw and the second for Honda
-$motorcades = [
-    'BMW' => new \AbstractFactory\Factories\MotorcadeBmw(),
-    'Honda' => new \AbstractFactory\Factories\MotorcadeHonda(),
+$factories = [
+    'BMW' => new \AbstractFactory\Factories\BmwFactory(),
+    'Honda' => new \AbstractFactory\Factories\HondaFactory(),
 ];
 
-//now lets add vehicles to our motorcades and print some info about them
-//the benefit of using Abstract Factory is that we use the same products and factory's interface
+//now lets create some vehicles with our factories and print some info about them
+//the benefit of using Abstract Factory is that we use the same product's and factory's interface
 //for work with different types of products and we are able to create a family of related products (by manufacturer)
-/** @var \AbstractFactory\MotorcadeFactory $motorcade */
-foreach ($motorcades as $motorcade) {
-    //create vehicles using our $motorcade concrete factory
-    $suv = $motorcade->addSUV();
-    $motorcycle = $motorcade->addMotorcycle();
+/** @var \AbstractFactory\Factory $factory */
+foreach ($factories as $factory) {
+    //create vehicles using our $factory - concrete factory
+    $suv = $factory->createSuv();
+    $motorcycle = $factory->createMotorcycle();
 
     //print out some info about current vehicles (products)
-    print ("Motorcade (a products family) " . get_class($motorcade) . "\n");
-    print ("\t{$suv->vehicleType()} was manufactured by: {$suv->getSUVManufacturer()}\n");
+    print ("Motorcade (a products family) " . get_class($factory) . "\n");
+    print ("\t{$suv->vehicleType()} was manufactured by: {$suv->getSuvManufacturer()}\n");
     print ("\t{$motorcycle->vehicleType()} was manufactured by: {$motorcycle->getMotorcycleManufacturer()}\n");
     print ("--------------------------------------------\n");
 }

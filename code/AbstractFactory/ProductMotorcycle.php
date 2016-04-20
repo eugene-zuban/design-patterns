@@ -3,12 +3,12 @@
 namespace AbstractFactory;
 
 /**
- * Class ManufactureSUV is an interface for SUVs
+ * Class ProductMotorcycle is an Abstract Motorcycle Product type
  * @package AbstractFactory
  */
-abstract class ManufactureSUV
+abstract class ProductMotorcycle
 {
-    abstract public function getSUVManufacturer();
+    abstract function getMotorcycleManufacturer();
 
     /**
      * Returns current Manufacture's vehicle type
@@ -16,6 +16,6 @@ abstract class ManufactureSUV
      */
     public function vehicleType()
     {
-        return 'SUV';
+        return 'Motorcycle';
     }
 }
