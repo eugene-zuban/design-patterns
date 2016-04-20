@@ -6,11 +6,16 @@ I'm still working on it and plan to add new patterns periodically.
 
 ### Examples of Design Patterns on PHP###
 
-* [Composite](https://github.com/jack-zuban/design-patterns/tree/master/code/Composite)
-* [Strategy](https://github.com/jack-zuban/design-patterns/tree/master/code/Decorator)
-* [Singleton](https://github.com/jack-zuban/design-patterns/tree/master/code/Singleton)
-* [Decorator](https://github.com/jack-zuban/design-patterns/tree/master/code/Decorator)
+#### Creational Patterns
 * [Abstract Factory](https://github.com/jack-zuban/design-patterns/tree/master/code/AbstractFactory)
+* [Singleton](https://github.com/jack-zuban/design-patterns/tree/master/code/Singleton)
+
+#### Structural Patterns
+* [Composite](https://github.com/jack-zuban/design-patterns/tree/master/code/Composite)
+* [Decorator](https://github.com/jack-zuban/design-patterns/tree/master/code/Decorator)
+
+#### Behavioral Patterns
+* [Strategy](https://github.com/jack-zuban/design-patterns/tree/master/code/Decorator)
 
 ### How to use it? ###
 
