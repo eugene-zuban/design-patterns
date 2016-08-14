@@ -2,36 +2,16 @@
 
 namespace FactoryMethod;
 
-class HondaCar implements ProductCar
+/**
+ * Class HondaCar a concrete product returned from the HondaCreator factory
+ */
+class HondaCar extends ProductCar
 {
     /**
-     * @var string
+     * @param int $internalPrice
      */
-    protected $model;
-
-    /**
-     * @var integer
-     */
-    protected $year;
-
-    /**
-     * @param string $model
-     * @param int $year
-     */
-    public function __construct($model, $year)
+    public function setSellPrice($internalPrice)
     {
-        $this->model = $model;
-
-        $this->year = $year;
-    }
-
-    public function model()
-    {
-        // TODO: Implement model() method.
-    }
-
-    public function year()
-    {
-        // TODO: Implement year() method.
+        $this->sellPrice = $internalPrice * 2;
     }
 }

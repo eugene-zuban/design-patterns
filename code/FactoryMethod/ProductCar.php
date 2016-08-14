@@ -3,23 +3,70 @@
 namespace FactoryMethod;
 
 /**
- * Interface ProductCar
+ * Class ProductCar an abstract class for all products that factories can produce
  */
-interface ProductCar
+abstract class ProductCar
 {
     /**
-     * @param string $model
-     * @param integer $year
+     * @var string
      */
-    public function __construct($model, $year);
+    protected $model;
+
+    /**
+     * @var int
+     */
+    protected $year;
+
+    /**
+     * @var int
+     */
+    protected $sellPrice;
+
+    /**
+     * @param string $model
+     */
+    public function setModel($model)
+    {
+        $this->model = $model;
+    }
+
+    /**
+     * @param int $year
+     */
+    public function setYear($year)
+    {
+        $this->year = $year;
+    }
+
+    /**
+     * Each of the product types uses a different algorithm for setting the price,
+     * so this method needs to be implemented in the products.
+     *
+     * @param int $internalPrice
+     */
+    abstract function setSellPrice($internalPrice);
 
     /**
      * @return string
      */
-    public function model();
+    public function model()
+    {
+        return $this->model;
+    }
 
     /**
      * @return integer
      */
-    public function year();
+    public function year()
+    {
+        return $this->year;
+    }
+
+    /**
+     * @return int
+     */
+    public function sellPrice()
+    {
+        return $this->sellPrice;
+    }
 }
