@@ -18,8 +18,10 @@ They are subclasses of the `ProductCar` abstract class and implement its abstrac
 
 ###Short description
 
-Because the factory classes and product classes use their interfaces, 
-it gives the ability to work with different type of products and factories similarly for a client.
+A client uses one of the `BmwCreator` or `HondaCreator` factories for creating `BmwCar` or `HondaCar` product instance. 
+
+The factory and product classes use their own interfaces (`CarCreator` and `ProductCar`), 
+so it gives the ability to work with different type of products and factories similarly for a client.
 
 The php file example.php and the factory test file show the idea of using the Factory Method pattern.
 
