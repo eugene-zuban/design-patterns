@@ -8,10 +8,15 @@ namespace FactoryMethod;
 class HondaCar extends ProductCar
 {
     /**
-     * @param int $internalPrice
+     * @var string
      */
-    public function setSellPrice($internalPrice)
+    protected $manufacture = 'Honda';
+
+    /**
+     * @param int $price
+     */
+    public function setInternalPrice($price)
     {
-        $this->sellPrice = $internalPrice * 2;
+        $this->sellPrice = $price * 2;
     }
 }

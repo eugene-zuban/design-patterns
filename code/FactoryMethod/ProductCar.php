@@ -10,6 +10,11 @@ abstract class ProductCar
     /**
      * @var string
      */
+    protected $manufacture;
+
+    /**
+     * @var string
+     */
     protected $model;
 
     /**
@@ -39,12 +44,20 @@ abstract class ProductCar
     }
 
     /**
-     * Each of the product types uses a different algorithm for setting the price,
+     * Each of the product types uses a different algorithm for calculating the price,
      * so this method needs to be implemented in the products.
      *
-     * @param int $internalPrice
+     * @param int $price
      */
-    abstract function setSellPrice($internalPrice);
+    abstract function setInternalPrice($price);
+
+    /**
+     * @return string
+     */
+    public function manufacture()
+    {
+        return $this->manufacture;
+    }
 
     /**
      * @return string
