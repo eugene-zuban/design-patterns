@@ -5,7 +5,7 @@ but factories subclasses are responsible for what type of object to create.
 
 ###Participants description
 
-* `CarCreator` an interface for creating objects. Has a method `carFactory` whic represents a Factory Method.
+* `CarCreator` an interface for creating objects. Has a method `carFactory` which represents a Factory Method.
 * `HondaCreator` and `BmwCreator` - are concrete classes that create producs with `carFactory` methods. `HondaCreator` returns an instance of `HondaCar`,
 and `BmwCreator` returns a `BmwCar` instance.
 * `ProductCar` an abstract Product class which acts as an interface for products `HondaCar` and `BmwCar`.
