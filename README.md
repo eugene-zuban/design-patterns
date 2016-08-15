@@ -1,6 +1,6 @@
 ## What is this repository for? ##
 
-This repo includes Design Patterns and their implementations in PHP. Information about patterns that are described here can be found in the book "Design Patterns - Elements of Reusable Object-Oriented Software" by GOD and in Wikipedia.
+This repo includes Design Patterns and their implementations in PHP. Information about patterns which are described here can be found in the book "Design Patterns - Elements of Reusable Object-Oriented Software" by GOD and in Wikipedia.
 
 I'm still working on it and plan to add new patterns periodically.
 
@@ -8,6 +8,7 @@ I'm still working on it and plan to add new patterns periodically.
 
 #### Creational Patterns
 * [Abstract Factory](https://github.com/jack-zuban/design-patterns/tree/master/code/AbstractFactory)
+* [Factory Method] (https://github.com/jack-zuban/design-patterns/tree/master/code/FactoryMethod)
 * [Singleton](https://github.com/jack-zuban/design-patterns/tree/master/code/Singleton)
 
 #### Structural Patterns
@@ -20,8 +21,8 @@ I'm still working on it and plan to add new patterns periodically.
 ### How to use it? ###
 
 * clone the repo `git clone https://github.com/jack-zuban/design-patterns.git`
-* run `composer install` (if you don't have a composer installed, here is a link how to do that: https://getcomposer.org/doc/00-intro.md)
-* for running examples: Each design pattern has an `example.php` file with a simple code that shows how the pattern can be used. This is a CLI PHP file and for executing the example go to the `code/{DesignPatternName}` directory and type `php example.php`
+* run `composer install` (if you don't have composer installed, here is a link how to do that: https://getcomposer.org/doc/00-intro.md)
+* for running examples: Each design pattern has its `example.php` file with a simple code shows how the pattern can be used. This is a CLI PHP file and for executing the example go to the `code/{DesignPatternName}` directory and type `php example.php`
 * for doing tests: in the project's root directory type `./vendor/bin/phpunit tests`
 
 
