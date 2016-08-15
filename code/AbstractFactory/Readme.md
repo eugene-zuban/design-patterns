@@ -29,6 +29,6 @@ And selecting a concrete factory by the client can guarantee that the client wou
 
 The php file example.php and the factory test file show the idea of using the Abstract Factory pattern.
 
-### More information about the Strategy pattern
+### More information about the Abstract Factory pattern
 
 More information about the [Abstract Factory Design Pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern) on Wikipedia
