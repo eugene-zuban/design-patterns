@@ -16,7 +16,7 @@ I'm still working on it and plan to add new patterns periodically.
 * [Decorator](https://github.com/jack-zuban/design-patterns/tree/master/code/Decorator)
 
 #### Behavioral Patterns
-* [Strategy](https://github.com/jack-zuban/design-patterns/tree/master/code/Decorator)
+* [Strategy](https://github.com/jack-zuban/design-patterns/tree/master/code/Strategy)
 
 ### How to use it? ###
 
