@@ -11,6 +11,9 @@ class Singleton
      */
     private static $instance;
 
+    /**
+     * @return Singleton
+     */
     public static function instance()
     {
         if (static::$instance == null) {
@@ -21,10 +24,10 @@ class Singleton
     }
 
     /**
-     * Make constructor protected to prevent using it outside the class
+     * Make the constructor protected for preventing of using directly.
      */
     protected function __construct()
     {
-
+        // no code here
     }
 }
