@@ -9,10 +9,6 @@ Strategy pattern lets client (Composition) to use different algorithms through t
 * `MmsFormatter`, `SmsFormatter` and `EmailFormatter` are ConcreteStrategy. Implements the formatting algorithms using the Strategy interface.
 * `Message` class represents a Context (Composition). Stores a message and uses one of the ConcreteStrategy for formatting it.
 
-### UML
-
-![strategy.png](https://github.com/jack-zuban/design-patterns/blob/master/images/strategy.png)
-
 ### Short description
 
 With the Strategy design Pattern we can use the same interface (declared in the `Formatter` class) for doing different formatting message using one of the formatters: MmsFormatter, SmsFormatter or EmailFormatter.
