@@ -5,15 +5,13 @@ namespace AbstractFactory\Products;
 use AbstractFactory\ProductMotorcycle;
 
 /**
- * Class ProductMotorcycleHonda a product of/for HondaFactory concrete factory
+ * Class ProductMotorcycleHonda a product produced by the HondaFactory concrete factory.
  *
  * @package AbstractFactory\Products
  */
 class ProductMotorcycleHonda extends ProductMotorcycle
 {
     /**
-     * Returns Motorcycle's manufacturer
-     *
      * @return string
      */
     public function getMotorcycleManufacturer()

@@ -1,17 +1,13 @@
 ##Abstract Factory
 
-This is a creational pattern that provides an interface for creating families of related objects.
+This is a Creational Rattern that provides an interface for creating families of related objects.
 
 ###Participants description
 
-* `Factory` an abstract factory - an interface for concrete factories. Client works through this interface for working
-with concrete factories. Declares `CreateSuv` and `CreateMotorcycle` methods which forms the interface which client uses.
-* `HondaFactory` and `BmwFactory` - are concrete factories for creating specific products (Honda and BMW respectively).
-Using a one of the concrete factories by a client gives this client availability to create a specific family of products.
-* `ProductSuv` and `ProductMotorcycle` are abstract classes that provide an interface for client to work with products that
-were created with selected by the client concrete factory.
-* `ProductMotorcycleBmw`, `ProductMotorcycleHonda`, `ProductSuvBmw`, `ProductSuvHonda` are concrete products that can be created
-by their factories and accessible for the client through `ProductSuv` and `ProductMotorcycle` interface/methods.
+* `Factory` provides an interface for creating products. Clients are using this intercace for getting products. It specifies the `CreateSuv` and `CreateMotorcycle` methods.
+* `HondaFactory` and `BmwFactory` - are concrete factories for producing a specific type products (Honda and BMW respectively).
+* `ProductSuv` and `ProductMotorcycle` are abstract products returned from `Factory`. Declares methods for working with them.
+* `ProductMotorcycleBmw`, `ProductMotorcycleHonda`, `ProductSuvBmw`, `ProductSuvHonda` are concrete products that `HondaFactory` and `BmwFactory` return.
 
 ### UML
 
@@ -19,16 +15,14 @@ by their factories and accessible for the client through `ProductSuv` and `Produ
 
 ###Short description
 
-Client A can use a one of the Factories (`BmwFactory` or `HondaFactory`) for creating a specific, related to each other
-products (SUVs or Motorcycles) that will be accessible through their interface - abstract classes `ProductSuv` for SUVs
-and `ProductMotorcycle` for Motorcycles.
+A client can use one of the Factories (`BmwFactory` or `HondaFactory`) for creating a particular, related to each other type of products (SUVs and Motorcycles) which will be accessible through their interfaces, abstract classes `ProductSuv` and `ProductMotorcycle`.
 
-A one of the benefits of Abstract Factory, as we can see it in the `example.php`, is to use the same interface (provided by
-`Factory`) for creating and working with different families of related products created by their factories.
-And selecting a concrete factory by the client can guarantee that the client would use a related family of products.
+One of the benefits of Abstract Factory, as we can see it in the `example.php`, is using the same interface (provided by the `Factory`) for creating and working with different families of related products produced by their factories.
 
-The php file example.php and the factory test file show the idea of using the Abstract Factory pattern.
+Selecting a concrete factory by the client can guarantee that the client will use only the chosen family of products.
 
-### More information about the Abstract Factory pattern
+`example.php` and the factory's test file provide an idea of using Abstract Factory pattern.
 
-More information about the [Abstract Factory Design Pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern) on Wikipedia
+### More information about Abstract Factory pattern
+
+More information about [Abstract Factory Design Pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern) on Wikipedia

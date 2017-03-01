@@ -3,15 +3,16 @@
 namespace AbstractFactory;
 
 /**
- * Class ProductSuv is an interface for creating SUV products (Abstract SUV Product)
  * @package AbstractFactory
  */
 abstract class ProductSuv
 {
+    /**
+     * @return string
+     */
     abstract public function getSuvManufacturer();
 
     /**
-     * Returns current Manufacture's vehicle type
      * @return string
      */
     public function vehicleType()

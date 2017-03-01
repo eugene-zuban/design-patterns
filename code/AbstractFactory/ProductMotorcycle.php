@@ -3,15 +3,16 @@
 namespace AbstractFactory;
 
 /**
- * Class ProductMotorcycle is an Abstract Motorcycle Product type
  * @package AbstractFactory
  */
 abstract class ProductMotorcycle
 {
+    /**
+     * @return string
+     */
     abstract function getMotorcycleManufacturer();
 
     /**
-     * Returns current Manufacture's vehicle type
      * @return string
      */
     public function vehicleType()

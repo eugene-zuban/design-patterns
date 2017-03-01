@@ -5,14 +5,13 @@ namespace AbstractFactory\Products;
 use AbstractFactory\ProductSuv;
 
 /**
- * Class ProductSuvBmw represents a product of/for BmwFactory concrete factory
+ * Class ProductSuvBmw represents a product produced by BmwFactory concrete factory.
+ *
  * @package AbstractFactory\Products
  */
 class ProductSuvBmw extends ProductSuv
 {
     /**
-     * Returns SUV's manufacturer
-     *
      * @return string
      */
     public function getSuvManufacturer()
