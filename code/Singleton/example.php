@@ -2,9 +2,8 @@
 
 require (__DIR__ . '/../../vendor/autoload.php');
 
-//create an object with static instance method of the Singleton class
+//create a new object using the static instance() method
 $firstCall = \Singleton\Singleton::instance();
 
-//doing the second call we will receive the same object of the Singleton class
-//as a result we will have only one object that was created with the first call
+//while doing a new call, we will get the same object instead of a new one.
 $secondCall = \Singleton\Singleton::instance();
