@@ -3,7 +3,7 @@
 namespace Strategy;
 
 /**
- * Class EmailFormatter does format using the Email formatting strategy
+ * Class EmailFormatter does the formatting using the Email formatting strategy (algorithm)
  *
  * @package Strategy
  */

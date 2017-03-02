@@ -3,11 +3,11 @@
 namespace Strategy;
 
 /**
- * Class Formatter abstract class for implementing the Strategy pattern
+ * Class Formatter is an abstract class that represents a Strategy pattern
  *
  * @package Strategy
  */
-abstract class Formatter implements FormatterInterface
+abstract class Formatter
 {
     /**
      * @var string
@@ -15,12 +15,12 @@ abstract class Formatter implements FormatterInterface
     protected $formattedMessage;
 
     /**
-     * @param string $message unformatted message
+     * @param string $message
      */
     abstract public function formatMessage($message);
 
     /**
-     * @return string - a formatted with selected strategy message
+     * @return string
      */
     public function formattedMessage()
     {
