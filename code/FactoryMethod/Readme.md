@@ -1,16 +1,13 @@
 ##Method Factory
 
-One of the Creational Patterns which defines an interface for creating an object, 
-but factories subclasses are responsible for what type of object to create.
+One of the Creational Patterns which defines an interface for creating objects, but it lets subclasses (Factories) to choose which objects to create.
 
 ###Participants description
 
-* `CarCreator` an interface for creating objects. Has a method `carFactory` which represents a Factory Method.
-* `HondaCreator` and `BmwCreator` - are concrete classes that create producs with `carFactory` methods. `HondaCreator` returns an instance of `HondaCar`,
-and `BmwCreator` returns a `BmwCar` instance.
-* `ProductCar` an abstract Product class which acts as an interface for products `HondaCar` and `BmwCar`.
-* `HondaCar` and `BmwCar` are concreate classes - products of their factories. 
-They are subclasses of the `ProductCar` abstract class and implement its abstract methods and have ability to override others.
+* `CarCreator` an interface for creating objects, declares the factory method;
+* `HondaCreator` and `BmwCreator` are concrete Factories that create products with `carFactory()` Factory Methods. `HondaCreator` returns an instance of `HondaCar`, and `BmwCreator` returns a `BmwCar` instance;
+* `ProductCar` an abstract `Product` class defines the interface for objects the factory methods produces;
+* `HondaCar` and `BmwCar` are concrete classes implement the ProductCar "interface".
 
 ### UML
 
@@ -18,12 +15,11 @@ They are subclasses of the `ProductCar` abstract class and implement its abstrac
 
 ###Short description
 
-A client uses one of the `BmwCreator` or `HondaCreator` factories for creating `BmwCar` or `HondaCar` product instance. 
+A client uses one of the `BmwCreator` or `HondaCreator` factories for creating `BmwCar` or `HondaCar` product instances. 
 
-The factory and product classes use their own interfaces (`CarCreator` and `ProductCar`), 
-so it gives the ability to work with different type of products and factories similarly for a client.
+The Factory and Product classes use their interfaces (`CarCreator` and `ProductCar`), so it gives the ability to work with different type of products and factories by the same way for the client.
 
-The php file example.php and the factory test file show the idea of using the Factory Method pattern.
+The `example.php` file and the factory's test file show ideas of using the Factory Method pattern.
 
 ### More information about the Factory Method Pattern
 

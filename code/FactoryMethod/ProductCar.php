@@ -3,7 +3,7 @@
 namespace FactoryMethod;
 
 /**
- * Class ProductCar an abstract class for all products that factories can produce
+ * Class ProductCar an abstract class for any product that our factories can produce
  */
 abstract class ProductCar
 {
@@ -44,8 +44,8 @@ abstract class ProductCar
     }
 
     /**
-     * Each of the product types uses a different algorithm for calculating the price,
-     * so this method needs to be implemented in the products.
+     * Each of the product types uses different algorithms for calculating the price,
+     * so this method needs to be implemented in all the products.
      *
      * @param int $price
      */

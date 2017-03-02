@@ -3,12 +3,12 @@
 namespace FactoryMethod;
 
 /**
- * Interface CarCreator the interface of objects the factory method creates
+ * Interface CarCreator an interface specifies factory method
  */
 interface CarCreator
 {
     /**
      * @return ProductCar
      */
-    public function carFactory();
+    public function createCar();
 }

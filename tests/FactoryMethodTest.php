@@ -32,7 +32,7 @@ class FactoryMethodTest extends PHPUnit_Framework_TestCase
 
     /**
      * All creators (factories) need to use the same interface
-     * for providing their clients ability to use any of them in the same way.
+     * for providing their clients ability to use any of them by the same way.
      *
      * Because all our factories implement the CarCreator interface,
      * we can assert that they are its instances.
@@ -45,11 +45,9 @@ class FactoryMethodTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * In the second test, we need to check that all our products provide
-     * the same interface for a client.
+     * In the second test, we need to check that all our products provides the same "interface" (type) for a client.
      *
-     * BmwCar & HondaCar need to extend the ProductCar class
-     * for providing the same interface.
+     * BmwCar & HondaCar need to extend the ProductCar class for that.
      */
     public function testThatAllProductsUseTheSameInterface()
     {
@@ -66,7 +64,6 @@ class FactoryMethodTest extends PHPUnit_Framework_TestCase
 
     /**
      * Test that all factories return correct product types.
-     * It is the primary test for factories.
      *
      * @dataProvider dataForTestingFactories()
      * @param \FactoryMethod\ProductCar $product
@@ -74,7 +71,7 @@ class FactoryMethodTest extends PHPUnit_Framework_TestCase
      */
     public function testThatFactoryWorks($product, $expectedProductType)
     {
-        //checks that the product created from its factory has a correct type
+        //checks that the product created within its factory has a correct type
         $this->assertInstanceOf($expectedProductType, $product);
     }
 
@@ -88,12 +85,12 @@ class FactoryMethodTest extends PHPUnit_Framework_TestCase
     {
         return [
             [
-                (new \FactoryMethod\HondaCreator())->carFactory(),
+                (new \FactoryMethod\HondaCreator())->createCar(),
                 \FactoryMethod\HondaCar::class
             ],
 
             [
-                (new \FactoryMethod\BmwCreator())->carFactory(),
+                (new \FactoryMethod\BmwCreator())->createCar(),
                 \FactoryMethod\BmwCar::class
             ]
         ];

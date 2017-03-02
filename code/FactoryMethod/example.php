@@ -2,16 +2,16 @@
 
 require (__DIR__ . '/../../vendor/autoload.php');
 
-//create a Honda car using the HondaCreator factory
-$product = (new \FactoryMethod\HondaCreator())->carFactory();
+//create a Honda car using HondaCreator factory
+$product = (new \FactoryMethod\HondaCreator())->createCar();
 $product->setModel('Accord');
 $product->setYear(2017);
 $product->setInternalPrice(15000);
 
 $products[] = $product;
 
-//create a Bmw car using the BmwCreator factory
-$product = (new \FactoryMethod\BmwCreator())->carFactory();
+//create a Bmw car using BmwCreator factory
+$product = (new \FactoryMethod\BmwCreator())->createCar();
 $product->setModel('M7');
 $product->setYear(2016);
 $product->setInternalPrice(25000);
@@ -19,7 +19,7 @@ $product->setInternalPrice(25000);
 $products[] = $product;
 
 //print all our products
-//because all our products share the same interface, we can access them identically
+//because all our products share the same interface, we can access them uniformly
 /** @var \FactoryMethod\ProductCar $product */
 foreach ($products as $product) {
     print ('Manufacture: ' . $product->manufacture() . PHP_EOL);

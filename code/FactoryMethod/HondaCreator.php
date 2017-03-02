@@ -3,16 +3,14 @@
 namespace FactoryMethod;
 
 /**
- * Class HondaCreator a creator declares the factory method
+ * Class HondaCreator a creator that implements our Factory Method
  */
 class HondaCreator implements CarCreator
 {
     /**
-     * Factory Method returns a HondaCar product (object)
-     *
      * @return \FactoryMethod\HondaCar
      */
-    public function carFactory()
+    public function createCar()
     {
       return new HondaCar();
     }
