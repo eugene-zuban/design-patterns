@@ -3,7 +3,7 @@
 namespace Decorator;
 
 /**
- * Class DivDecorator wraps output inside <div> tag
+ * Class DivDecorator wraps the output inside the <div> tag
  * @package Decorator
  */
 class DivDecorator extends Decorator

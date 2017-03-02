@@ -1,20 +1,15 @@
 ##Decorator Design Pattern
 
-The main idea of this patter is to add behaviours (to decorate) for individual objects dynamically and transparently.
-It's a flexible alternative to subclussing. It represents a "light" version of Strategy Pattern which changes not only
-an object's look but also its main algorithm.
+The main idea of the pattern is to add additional behaviors (decorating) for individual objects dynamically and transparently. It's a flexible alternative to subclassing. It represents a "light" version of a Strategy Pattern which changes not only
+object's look but also its main algorithm.
 
-Using a decorator we can add to object a new functionality dynamically without affecting it. We can make a chain of
-changes that will add different "views/skins".
+Using Decorator, we can add to object new functionality dynamically without affecting the original object. We can make a chain of changes that will add different "views/skins".
 
-### Usage example (based on the current Decorator realization)
+### Example of usage (based on the current Decorator realization)
 
-Let's say that we have some HTML output system with the TextElement and ImageElement classes/instances on it. We want
-to be able rendering them with different wrappers (HTML tags like: div, span, p, etc). Also, we want to be able to
-add new wrappers easily without changing our Element classes, to be able to use them in any order and to nest them with one
-another (make a nested chain).
+Suppose we have a simple HTML output system with `TextElement` and `ImageElement` classes that represent a simple text element without any tags, and a simple <img> tag. Now we want to be able to render these elements using different wrappers (HTML tags like <div>, <span>, <p>, etc.). Also, we want to be able to add new wrappers quickly and without changing our basic element classes and to be able to use them in any order (chaining, nesting, etc.).
 
-We can do this easily with Decorator pattern.
+We can do that very easily using the Decorator pattern.
 
 ### Decorator pattern UML
 
@@ -22,13 +17,11 @@ We can do this easily with Decorator pattern.
 
 ### Description of the current Decorator realization
 
-* `ElementInterface` the main interface for all the classes. It declares the `renderElement()` method.
-* `TextElement` Simply renders a given string using the `renderElement()` method without changit it.
-* `ImageElement` class for creating an image HTML element. `renderElement()` renders html img tag with `src` and
-`Alt text` from arguments.
-* `Decorator` is abstract class that implements `ElementInterface`.
-* `SpanDecorator` and `DivDecorator` are concrete Decorator classes which adds various "decorations" by overriding `renderElement()`
-and passing the request on to `element` (calling parent's `renderElement()` method).
+* `ElementInterface` main interface for all the element classes. It declares a simple output, the `renderElement()` method;
+* `TextElement` simply renders a given string using `renderElement()` method without changing the given string;
+* `ImageElement` a class for creating a <img> HTML tag with given src and alt strings. `renderElement()` renders <img> tag these strings without changing them.
+* `Decorator` is an abstract class that implements `ElementInterface` and provides a default empty decoration.
+* `SpanDecorator` and `DivDecorator` extend `Decorator` class, they add various "decorations" by adding additional html elements to the parent's `renderElement()` output, and as a part of decoration, they directly call parent's `renderElement()` method for getting its output.
 
 ### More information about the Decorator pattern
 

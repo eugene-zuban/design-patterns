@@ -3,7 +3,7 @@
 namespace Decorator;
 
 /**
- * Class SpanDecorator wraps output inside <span> tag
+ * Class SpanDecorator wraps the parent's output inside <span> tag
  * @package Decorator
  */
 class SpanDecorator extends Decorator

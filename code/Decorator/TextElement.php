@@ -14,7 +14,6 @@ class TextElement implements ElementInterface
     protected $text;
 
     /**
-     * TextElement constructor.
      * @param $text
      */
     public function __construct($text)

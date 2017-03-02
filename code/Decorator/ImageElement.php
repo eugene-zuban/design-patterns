@@ -3,25 +3,24 @@
 namespace Decorator;
 
 /**
- * Class ImageElement generates an image with <img> tag
+ * Class ImageElement creates an image with <img> tag
  * @package Decorator
  */
 class ImageElement implements ElementInterface
 {
     /**
-     * @var string image source
+     * @var string
      */
     protected $src;
 
     /**
-     * @var string image alt text
+     * @var string
      */
     protected $alt;
 
     /**
-     * ImageElement constructor.
-     * @param $src
-     * @param $alt
+     * @param string $src
+     * @param string $alt
      */
     public function __construct($src, $alt = '')
     {
@@ -31,7 +30,7 @@ class ImageElement implements ElementInterface
     }
 
     /**
-     * @return string html img tag
+     * @return string
      */
     public function renderElement()
     {

@@ -9,14 +9,19 @@ class Decorator implements ElementInterface
      */
     protected $element;
 
+    /**
+     * Decorator constructor.
+     * @param ElementInterface $element
+     */
     public function __construct(ElementInterface $element)
     {
         $this->element = $element;
     }
 
     /**
-     * Forward the rendering request to the element's object
-     * @return mixed
+     * Forwards the request to the element
+     *
+     * @return string
      */
     public function renderElement()
     {
