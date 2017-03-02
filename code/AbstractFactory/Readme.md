@@ -1,6 +1,6 @@
 ##Abstract Factory
 
-This is a Creational Rattern that provides an interface for creating families of related objects.
+Abstract Factory is a Creational Pattern that provides an interface for creating families of related objects.
 
 ###Participants
 
