@@ -2,7 +2,7 @@
 
 This is a Creational Rattern that provides an interface for creating families of related objects.
 
-###Participants description
+###Participants
 
 * `Factory` provides an interface for creating products. Clients are using this intercace for getting products. It specifies the `CreateSuv` and `CreateMotorcycle` methods.
 * `HondaFactory` and `BmwFactory` - are concrete factories for producing a specific type products (Honda and BMW respectively).
