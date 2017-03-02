@@ -1,8 +1,5 @@
 <?php
 
-//for run this example go to the the code/Composite directory
-//and type "php example.php" in a console
-
 require __DIR__ . '/../../vendor/autoload.php';
 
 $billsPC = new \Composite\CompositePart('PC for Bill');

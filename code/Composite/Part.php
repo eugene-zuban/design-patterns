@@ -6,7 +6,7 @@ namespace Composite;
  * Class Part
  * @package Composite
  *
- * Defines a simple part, which can't have a child
+ * Defines a simple part (leaf) which can't have a child
  */
 class Part extends Equipment
 {
@@ -15,7 +15,7 @@ class Part extends Equipment
      */
     public function add(Equipment $equipment)
     {
-        return; //a part can't have any child
+        return; //this part can't have any child
     }
 
     /**
@@ -23,15 +23,15 @@ class Part extends Equipment
      */
     public function remove(Equipment $equipment)
     {
-        return; //can't remove child
+        return; //can't remove a child
     }
 
     /**
      * Default behaviour
      */
-    public function isComposite()
+    public function getComposite()
     {
-        return; //it's not composite
+        return; //it's not a composite
     }
 
     /**

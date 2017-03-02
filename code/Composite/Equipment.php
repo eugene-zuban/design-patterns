@@ -21,19 +21,19 @@ abstract class Equipment implements Operations, Price
     protected $partPrice;
 
     /**
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->partName;
-    }
-
-    /**
      * @param string $partName
      */
     public function __construct($partName)
     {
         $this->partName = $partName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->partName;
     }
 
     /**
@@ -58,5 +58,5 @@ abstract class Equipment implements Operations, Price
 
     abstract public function getAllParts();
 
-    abstract public function isComposite();
+    abstract public function getComposite();
 }

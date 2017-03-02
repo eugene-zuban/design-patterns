@@ -11,14 +11,14 @@ namespace Composite;
 class CompositePart extends Equipment
 {
     /**
-     * @var [] Equipment
+     * @var Equipment[]
      */
     protected $parts = [];
 
     /**
-     * @return CompositePart $this
+     * @return CompositePart
      */
-    public function isComposite()
+    public function getComposite()
     {
         return $this;
     }
@@ -36,7 +36,8 @@ class CompositePart extends Equipment
      */
     public function remove(Equipment $equipment)
     {
-        $index =  array_search($equipment, $this->parts);
+        $index = array_search($equipment, $this->parts);
+
         unset($this->parts[$index]);
     }
 
@@ -45,23 +46,23 @@ class CompositePart extends Equipment
      */
     public function getAllParts()
     {
-        $parts_names = '';
+        $partNames = '';
 
         /** @var Equipment $part */
         foreach ($this->parts as $part) {
             /** @var CompositePart $part */
-            if (is_object($composite = $part->isComposite())) {
-                $parts_names .= $composite->getAllParts();
+            if (is_object($composite = $part->getComposite())) {
+                $partNames .= $composite->getAllParts();
             }
 
-            $parts_names .= "Part: {$part->getName()}\n";
+            $partNames .= "Part: {$part->getName()}\n";
         }
 
-        return $parts_names;
+        return $partNames;
     }
 
     /**
-     * Get price for all bundle
+     * Get price for the bundle
      *
      * @return int
      */
@@ -70,8 +71,7 @@ class CompositePart extends Equipment
         $price = 0;
 
         /** @var Equipment $part */
-        foreach ($this->parts as $part)
-        {
+        foreach ($this->parts as $part) {
             $price = $part->getPrice() + $price;
         }
 
