@@ -1,4 +1,4 @@
-##Decorator Design Pattern
+## Decorator Design Pattern
 
 Main idea of this pattern is to add additional behaviors (decorating) for individual objects dynamically and transparently. It's a flexible alternative to subclassing. It represents a "light" version of Strategy Pattern which changes not only an
 object's look but also changes its main algorithm.
