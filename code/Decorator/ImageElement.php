@@ -3,7 +3,8 @@
 namespace Decorator;
 
 /**
- * Class ImageElement creates an image with <img> tag
+ * Class ImageElement creates an image with <img> tag.
+ *
  * @package Decorator
  */
 class ImageElement implements ElementInterface

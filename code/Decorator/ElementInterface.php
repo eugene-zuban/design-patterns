@@ -4,6 +4,7 @@ namespace Decorator;
 
 /**
  * Interface ElementInterface
+ *
  * @package Decorator
  */
 interface ElementInterface

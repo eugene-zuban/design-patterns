@@ -10,7 +10,6 @@ class Decorator implements ElementInterface
     protected $element;
 
     /**
-     * Decorator constructor.
      * @param ElementInterface $element
      */
     public function __construct(ElementInterface $element)
@@ -19,7 +18,7 @@ class Decorator implements ElementInterface
     }
 
     /**
-     * Forwards the request to the element
+     * Forwards request to the element.
      *
      * @return string
      */

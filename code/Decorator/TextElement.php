@@ -3,7 +3,8 @@
 namespace Decorator;
 
 /**
- * Class TextElement renders a simple text node without any additional tags
+ * Class TextElement renders a simple text node without any additional tags.
+ *
  * @package Decorator
  */
 class TextElement implements ElementInterface
@@ -22,7 +23,8 @@ class TextElement implements ElementInterface
     }
 
     /**
-     * Returns a simple text node without any tags
+     * Returns a simple text node without any tags.
+     *
      * @return string
      */
     public function renderElement()
