@@ -3,7 +3,7 @@
 namespace FactoryMethod;
 
 /**
- * Interface CarCreator an interface specifies factory method
+ * Interface CarCreator an interface specifies Factory Method
  */
 interface CarCreator
 {

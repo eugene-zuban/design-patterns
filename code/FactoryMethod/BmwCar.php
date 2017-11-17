@@ -3,7 +3,7 @@
 namespace FactoryMethod;
 
 /**
- * Class BmwCar a concrete product returned from the BmwCreator factory
+ * Class BmwCar a concrete product that BmwCreator factory returns.
  */
 class BmwCar extends ProductCar
 {

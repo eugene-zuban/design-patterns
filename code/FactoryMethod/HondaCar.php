@@ -3,7 +3,7 @@
 namespace FactoryMethod;
 
 /**
- * Class HondaCar a concrete product returned from the HondaCreator factory
+ * Class HondaCar a concrete product that HondaCreator Factory returns.
  */
 class HondaCar extends ProductCar
 {

@@ -3,7 +3,7 @@
 namespace FactoryMethod;
 
 /**
- * Class BmwCreator a factory that implements our Factory Method
+ * Class BmwCreator a factory implements Factory Method
  */
 class BmwCreator implements CarCreator
 {

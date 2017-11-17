@@ -18,8 +18,8 @@ $product->setInternalPrice(25000);
 
 $products[] = $product;
 
-//print all our products
-//because all our products share the same interface, we can access them uniformly
+//print all the products
+//because all the products share the same interface, we can access them uniformly
 /** @var \FactoryMethod\ProductCar $product */
 foreach ($products as $product) {
     print ('Manufacture: ' . $product->manufacture() . PHP_EOL);
