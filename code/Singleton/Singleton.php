@@ -5,7 +5,7 @@ namespace Singleton;
 class Singleton
 {
     /**
-     * Reference to current object
+     * Reference to the current object.
      *
      * @var Singleton
      */
@@ -24,7 +24,7 @@ class Singleton
     }
 
     /**
-     * Make the constructor protected for preventing of using directly.
+     * Disable public constructor.
      */
     protected function __construct()
     {

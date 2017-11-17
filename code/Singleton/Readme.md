@@ -1,12 +1,12 @@
 ##Singleton Design Pattern
 
-Singleton Pattern ensures that a class can be instantiated only once and into one object.
+Singleton Pattern ensures that a specified class can be instantiated only once and into one object.
 
 ### Short description
 
 ![singleton.png](https://github.com/jack-zuban/design-patterns/blob/master/images/singleton.png)
 
-By making the Singleton's constructor a private method, we are preventing of creating a new instance from the outside.
+By making Singleton's constructor as a private method, we disable the ability to create a new instance from the outside.
 
 ### More information about the Singleton pattern
 
