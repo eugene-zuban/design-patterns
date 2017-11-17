@@ -3,15 +3,15 @@
 require (__DIR__ . '/../../vendor/autoload.php');
 
 //let's consider that we have 2 different manufacturer (factories) that produce similar product (vehicles) types
-//for being doing that, we have to use 2 concrete factory: the first one is for Bmw and the second is for Honda
+//for doing that we need to use 2 concrete factories: the first one is for Bmw and the second is for Honda
 $factories = [
     'BMW' => new \AbstractFactory\Factories\BmwFactory(),
     'Honda' => new \AbstractFactory\Factories\HondaFactory(),
 ];
 
-// now let's create some vehicles with our factories and print information about them.
-// The benefit of using Abstract Factory is that we use the same product and factory interfaces
-// for working with different types of products and we can create a family of related products by switching the factory.
+// now let's create vehicles using our factories and print information about them.
+// The benefit of using Abstract Factory is we use the same product and factory interfaces
+// for working with different types of products, and we can create a family of related products by switching the factory.
 /** @var \AbstractFactory\Factory $factory */
 foreach ($factories as $factory) {
     $suv = $factory->createSuv();

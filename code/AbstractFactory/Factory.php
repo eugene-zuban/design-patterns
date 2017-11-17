@@ -3,7 +3,7 @@
 namespace AbstractFactory;
 
 /**
- * Interface Factory specifies methods for creating different type of vehicles
+ * Interface Factory specifies methods for creating different type of vehicles.
  *
  * @package AbstractFactory
  */
