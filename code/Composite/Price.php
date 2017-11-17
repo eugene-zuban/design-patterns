@@ -4,6 +4,7 @@ namespace Composite;
 
 /**
  * Interface Price
+ *
  * @package Composite
  */
 interface Price

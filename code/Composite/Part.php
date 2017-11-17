@@ -6,7 +6,7 @@ namespace Composite;
  * Class Part
  * @package Composite
  *
- * Defines a simple part (leaf) which can't have a child
+ * Defines a simple part (a leaf) which can't have a child.
  */
 class Part extends Equipment
 {

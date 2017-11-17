@@ -4,6 +4,7 @@ namespace Composite;
 
 /**
  * Interface Operations
+ *
  * @package Composite
  */
 interface Operations

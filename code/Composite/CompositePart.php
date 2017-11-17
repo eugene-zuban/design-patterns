@@ -6,7 +6,7 @@ namespace Composite;
  * Class CompositePart
  * @package Composite
  *
- * Defines a Composite Part which can have a child
+ * Defines a Composite Part which can have a child.
  */
 class CompositePart extends Equipment
 {
@@ -62,7 +62,7 @@ class CompositePart extends Equipment
     }
 
     /**
-     * Get price for the bundle
+     * Get price for the bundle.
      *
      * @return int
      */

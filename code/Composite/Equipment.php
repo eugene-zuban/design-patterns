@@ -6,7 +6,7 @@ namespace Composite;
  * Class Equipment
  * @package Composite
  *
- * Abstract class defines methods and properties for all equipment
+ * Abstract class defines methods and properties for all equipments.
  */
 abstract class Equipment implements Operations, Price
 {
