@@ -3,9 +3,7 @@
 namespace Strategy;
 
 /**
- * Class Message
- *
- * Message class does a messages formatting using the Formatter subclass instance
+ * Class Message formats the message using Formatter
  *
  * @package Strategy
  */
@@ -22,7 +20,7 @@ class Message
     protected $formatter;
 
     /**
-     * A formatter instance determines which formatter (algorithm) to use for the formatting.
+     * A $formatter instance sets which formatter (algorithm) to use.
      *
      * @param Formatter $formatter
      */
@@ -40,7 +38,7 @@ class Message
     }
 
     /**
-     * Doing the formatting using selected formatter
+     * Formatting the message with selected formatter.
      */
     public function formatMessage()
     {

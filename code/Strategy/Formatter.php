@@ -3,7 +3,7 @@
 namespace Strategy;
 
 /**
- * Class Formatter is an abstract class that represents a Strategy pattern
+ * Class Formatter is an abstract class represents Strategy Pattern
  *
  * @package Strategy
  */

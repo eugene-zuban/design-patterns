@@ -3,7 +3,7 @@
 namespace Strategy;
 
 /**
- * Class SmsFormatter does the formatting using the SMS formatting strategy (algorithm)
+ * Class SmsFormatter formats the message with SMS formatting strategy (algorithm).
  *
  * @package Strategy
  */

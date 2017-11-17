@@ -3,14 +3,14 @@
 namespace Strategy;
 
 /**
- * Class EmailFormatter does the formatting using the Email formatting strategy (algorithm)
+ * Class EmailFormatter formats the message with Email Strategy (algorithm).
  *
  * @package Strategy
  */
 class EmailFormatter extends Formatter
 {
     /**
-     * Email formatting
+     * Email formatting.
      *
      * @param string $message
      */
