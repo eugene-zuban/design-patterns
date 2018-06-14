@@ -1,6 +1,6 @@
 <?php
 
-class StrategyDesignTest extends PHPUnit_Framework_TestCase
+class StrategyDesignTest extends \PHPUnit\Framework\TestCase
 {
     protected $smsExpected;
 

@@ -3,7 +3,7 @@
 /**
  * Class FactoryMethodTest testing the Factory Method
  */
-class FactoryMethodTest extends PHPUnit_Framework_TestCase
+class FactoryMethodTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \FactoryMethod\HondaCreator

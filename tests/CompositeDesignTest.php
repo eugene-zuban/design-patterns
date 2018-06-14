@@ -3,7 +3,7 @@
 /**
  * Class CompositeDesignTest
  */
-class CompositeDesignTest extends PHPUnit_Framework_TestCase
+class CompositeDesignTest extends \PHPUnit\Framework\TestCase
 {
     public function testComposite()
     {

@@ -5,7 +5,7 @@ use Decorator\ImageElement;
 use Decorator\DivDecorator;
 use Decorator\SpanDecorator;
 
-class DecoratorTest extends PHPUnit_Framework_TestCase
+class DecoratorTest extends \PHPUnit\Framework\TestCase
 {
     public function testDecorator()
     {
