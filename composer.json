@@ -11,15 +11,14 @@
 
     "autoload": {
         "psr-4": {
+            "AbstractFactory\\": "code/AbstractFactory",
+            "Adapter\\": "code/Adapter",
             "Code\\": "code/",
             "Composite\\": "code/Composite",
-            "Strategy\\": "code/Strategy",
-            "Singleton\\": "code/Singleton",
             "Decorator\\": "code/Decorator",
-            "AbstractFactory\\": "code/AbstractFactory",
-            "AbstractFactory\\Factories\\": "code/AbstractFactory/Factories",
-            "AbstractFactory\\Products\\": "code/AbstractFactory/Products",
-            "FactoryMethod\\": "code/FactoryMethod"
+            "FactoryMethod\\": "code/FactoryMethod",
+            "Strategy\\": "code/Strategy",
+            "Singleton\\": "code/Singleton"
         }
     },
 
