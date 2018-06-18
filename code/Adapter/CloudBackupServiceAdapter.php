@@ -4,7 +4,7 @@ namespace Adapter;
 
 /**
  * Class CloudBackupServiceAdapter is an Object Adapter
- * adapts BackupService interface to CloudFileSystem Object.
+ * adapts the BackupService interface to the CloudFileSystem object interface.
  */
 class CloudBackupServiceAdapter implements BackupService
 {
@@ -23,15 +23,17 @@ class CloudBackupServiceAdapter implements BackupService
     }
 
     /**
-     * Implementing backup() method the adapter adapts BackupService to CloudFileSystem interface.
+     * Implementing backup() method the adapter adapts BackupService to the CloudFileSystem interface.
      *
      * @param string $source
      * @param string $destination
+     * @return string
      */
-    public function backup(string $source, string $destination)
+    public function backup(string $source, string $destination): string
     {
         $this->cloudFileSystem->setFrom($source);
         $this->cloudFileSystem->setTo($destination);
-        $this->cloudFileSystem->copyFile();
+
+        return $this->cloudFileSystem->copyFile();
     }
 }

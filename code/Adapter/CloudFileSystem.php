@@ -3,8 +3,7 @@
 namespace Adapter;
 
 /**
- * Class CloudFileSystem is Adaptee provides a different interface for copying files.
- * Client code does not know how to use it without an appropriate adapter.
+ * Class Cloud FileSystem is Adaptee provides a non BackupService compatible interface.
  */
 class CloudFileSystem
 {
@@ -18,18 +17,27 @@ class CloudFileSystem
      */
     private $to;
 
+    /**
+     * @param string $fileName
+     */
     public function setFrom(string $fileName)
     {
         $this->from = $fileName;
     }
 
+    /**
+     * @param string $to
+     */
     public function setTo(string $to)
     {
         $this->to = $to;
     }
 
+    /**
+     * @return string
+     */
     public function copyFile()
     {
-        return "Copy file from {$this->from} to {$this->to} using CloudFileSystem";
+        return "Copy files from {$this->from} to {$this->to} using CloudFileSystem.";
     }
 }
